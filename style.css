@@ -116,11 +116,11 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     opacity: 0.8;
 }
 
-button:active{
+button:active {
     opacity: 0.6;
 }
 
@@ -156,8 +156,8 @@ p {
     top: 190px;
 }
 
-.valor-dolar{
-    top:190px
+.valor-dolar {
+    top: 190px
 }
 
 .vector {
@@ -189,26 +189,7 @@ section {
     border: 1px solid #772FD3;
 }
 
-@media screen and (max-width:720px){
-    * {
-        padding: 0;
-        margin: 0;
-        
-        
-    }
-
-    img {
-        position: relative;
-        left: 24vh;
-    }
-
-    main {
-        position: relative;
-        left:21vh;        
-    }
-}
-
-@media screen and (max-width:600px){
+@media screen and (max-width:720px) {
     * {
         padding: 0;
         margin: 0;
@@ -216,17 +197,17 @@ section {
 
     img {
         position: relative;
-        left: 17vh;
+        left: 30vw;
     }
 
     main {
         position: relative;
-        left:15vh;        
+        left: 26vw;
     }
-
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
+
     * {
         padding: 0;
         margin: 0;
@@ -234,17 +215,18 @@ section {
 
     img {
         position: relative;
-        left: 13vh;
+        left: 24vw;
     }
 
     main {
         position: relative;
-        left:10vh;        
+        left: 20vw;
     }
 
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:430px) {
+
     * {
         padding: 0;
         margin: 0;
@@ -252,12 +234,30 @@ section {
 
     img {
         position: relative;
-        left: 10vh;
+        left: 20vw;
     }
 
     main {
         position: relative;
-        left:7vh;        
+        left: 14vw;
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    * {
+        padding: 0;
+        margin: 0;
     }
 
+    img {
+        position: relative;
+        left: 15vw;
+    }
+
+    main {
+        position: relative;
+        left: 8vw;
+    }
 }
+
