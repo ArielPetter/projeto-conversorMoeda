@@ -10,8 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="script.js" />
-    <title>Calculadora</title>
+    <title>Conversor</title>
   </head>
 
   <body>
@@ -45,13 +44,17 @@
       <br />
       <label class="valor">
         Valor
-        <input placeholder="R$ 10.000.00" />
+        <input class="main-input" placeholder="R$ 10.000.00" />
       </label>
       <!--label valor-->
-      <button>Converter</button>
+      <button class="main-button">Converter</button>
       <section>
         <div class="div">
-          <img class="moeda-real" src="./assets/real.png" alt="bandeira-brasil"/>
+          <img
+            class="moeda-real"
+            src="./assets/real.png"
+            alt="bandeira-brasil"
+          />
           <p>Real</p>
           <p>R$ 0,00</p>
         </div>
@@ -59,11 +62,16 @@
           <img class="vector" src="./assets/Vector.png" alt="seta" />
         </div>
         <div class="div">
-          <img class="moeda-dolar" src="./assets/dólar.png" alt="bandeira-eua"/>
+          <img
+            class="moeda-dolar"
+            src="./assets/dólar.png"
+            alt="bandeira-eua"
+          />
           <p class="p-dolar">Dólar</p>
           <p class="valor-dolar">US$ 0,00</p>
         </div>
       </section>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>
