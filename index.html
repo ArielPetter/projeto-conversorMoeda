@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <img src="./assets/logo.gif" alt="logo-caluladora" />
+
+    <main>
+      <label class="converter-de">
+        converter <b>de</b>:
+        <br />
+        <select>
+          <option>R$ Real brasileiro</option>
+          <option>US$ Dólar americano</option>
+          <option>€ Euro</option>
+          <br />
+        </select>
+        <!--select converter de-->
+      </label>
+      <!--label converter de-->
+      <br />
+      <label class="converter-para">
+        converter <b>para</b>:
+        <br />
+        <select>
+          <option>US$ Dólar americano</option>
+          <option>R$ Real brasileiro</option>
+          <option>€ Euro</option>
+        </select>
+        <!--select converter para-->
+      </label>
+      <!--label converter para-->
+      <br />
+      <label class="valor">
+        Valor
+        <input placeholder="R$ 10.000.00" />
+      </label>
+      <!--label valor-->
+      <button>Converter</button>
+      <section>
+        <div class="div">
+          <img class="moeda-real" src="./assets/real.png" alt="bandeira-brasil"/>
+          <p>Real</p>
+          <p>R$ 0,00</p>
+        </div>
+        <div class="div">
+          <img class="vector" src="./assets/Vector.png" alt="seta" />
+        </div>
+        <div class="div">
+          <img class="moeda-dolar" src="./assets/dólar.png" alt="bandeira-eua"/>
+          <p class="p-dolar">Dólar</p>
+          <p class="valor-dolar">US$ 0,00</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
