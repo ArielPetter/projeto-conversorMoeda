@@ -33,10 +33,10 @@
       <label class="converter-para">
         converter <b>para</b>:
         <br />
-        <select>
-          <option>R$ Real brasileiro</option>
-          <option>US$ Dólar americano</option>
-          <option>€ Euro</option>
+        <select class="select-convertido">
+          <option value="dolar">US$ Dólar americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="real">R$ Real brasileiro</option>
         </select>
         <!--select converter para-->
       </label>
@@ -51,11 +51,12 @@
       <section>
         <div class="div">
           <img
-            class="moeda-real" 
+            class="moeda-real"
             src="./assets/real.png"
             alt="bandeira-brasil"
-          /> <!--moeda-real é da img-->
-          <p class="nome-moeda">Real</p>
+          />
+          <!--moeda-real é da img-->
+          <p class="nome-moeda" id="nome-converter">Real</p>
           <p class="valor-converter">R$ 0,00</p>
         </div>
         <div class="div">
@@ -63,11 +64,11 @@
         </div>
         <div class="div">
           <img
-            class="moeda-dolar"
-            src="./assets/dólar.png"
+            class="bandeira-convertida"
+            src="./assets/dolar.png"
             alt="bandeira-eua"
           />
-          <p class="nome-moeda2">Dólar</p>
+          <p class="nome-moeda2" id="nome-convertido">Dólar</p>
           <p class="valor-convertido">US$ 0,00</p>
         </div>
       </section>

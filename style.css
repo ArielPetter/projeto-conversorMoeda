@@ -76,8 +76,6 @@ input {
     cursor: pointer;
 }
 
-
-
 b {
     background: none;
 }
@@ -183,7 +181,7 @@ p {
     margin: 0;
 }
 
-.moeda-dolar {
+.bandeira-convertida {
     width: 48px;
     height: 48px;
     top: 180px;
