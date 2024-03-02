@@ -83,6 +83,9 @@ b {
 }
 
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: none;
     width: 250px;
     height: 48px;
@@ -152,11 +155,22 @@ p {
     text-align: center;
 }
 
-.p-dolar {
+.valor-converter {
+    width: 90px;
+    color: #555555;
+    background-color: white;
+    position: relative;
+    top: 12px;
+    left: 101px;
+    justify-content: center;
+    text-align: center;
+}
+
+.nome-moeda2 {
     top: 190px;
 }
 
-.valor-dolar {
+.valor-convertido {
     top: 190px
 }
 
