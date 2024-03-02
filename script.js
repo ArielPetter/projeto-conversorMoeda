@@ -5,6 +5,7 @@ function convertValues() {
   const inputValue = document.querySelector(".main-input").value; // valor input
   const valueDolar = 4.95;
   const valueEuro = 5.38;
+  const valueLibra = 6.27;
   const valueToConvert = document.querySelector(".valor-converter"); // valor a converter
   const valueToConverted = document.querySelector(".valor-convertido"); // valor convertido
 
@@ -22,6 +23,13 @@ function convertValues() {
       style: "currency",
       currency: "EUR",
     }).format(inputValue / valueEuro);
+  }
+
+  if (select.value == "libra") { //libra estiver selecionado
+    valueToConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+      style: "currency",
+      currency: "GBP"
+    }).format(inputValue / valueLibra);
   }
 
   valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {

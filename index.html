@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/icone.png">
     <title>Conversor</title>
   </head>
 
@@ -20,10 +21,8 @@
       <label class="converter-de">
         converter <b>de</b>:
         <br />
-        <select>
-          <option>R$ Real brasileiro</option>
-          <option>US$ Dólar americano</option>
-          <option>€ Euro</option>
+        <select class="select-converter"> <!--select para converter-->
+          <option value="-real">R$ Real brasileiro</option>
           <br />
         </select>
         <!--select converter de-->
@@ -33,10 +32,10 @@
       <label class="converter-para">
         converter <b>para</b>:
         <br />
-        <select class="select-convertido">
+        <select class="select-convertido"> <!--select convertido-->
           <option value="dolar">US$ Dólar americano</option>
           <option value="euro">€ Euro</option>
-          <option value="real">R$ Real brasileiro</option>
+          <option value="cripto">₿ Bitcoin</option>
         </select>
         <!--select converter para-->
       </label>
@@ -44,19 +43,18 @@
       <br />
       <label class="valor">
         Valor
-        <input class="main-input" placeholder="R$ 10.000.00" />
+        <input class="main-input" placeholder="Digite um valor" />
       </label>
       <!--label valor-->
       <button class="main-button">Converter</button>
       <section>
         <div class="div">
           <img
-            class="moeda-real"
+            class="bandeira-converter"
             src="./assets/real.png"
             alt="bandeira-brasil"
           />
-          <!--moeda-real é da img-->
-          <p class="nome-moeda" id="nome-converter">Real</p>
+          <p class="nome-moeda" id="nome-converter">Real</p> <!--nome moeda a converter-->
           <p class="valor-converter">R$ 0,00</p>
         </div>
         <div class="div">
@@ -68,7 +66,7 @@
             src="./assets/dolar.png"
             alt="bandeira-eua"
           />
-          <p class="nome-moeda2" id="nome-convertido">Dólar</p>
+          <p class="nome-moeda2" id="nome-convertido">Dólar americano</p> <!--nome moeda convertida-->
           <p class="valor-convertido">US$ 0,00</p>
         </div>
       </section>
