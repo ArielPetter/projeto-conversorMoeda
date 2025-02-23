@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +124,13 @@ button:hover {
 button:active {
     opacity: 0.6;
 }
+
+.custom-toast {
+    cursor: default !important; /* Impede que o cursor vire 'pointer' */
+    width: 400px !important; /* Garantir que a largura seja aplicada */
+    height: auto !important; /* Deixa a altura auto-ajustável, mas você pode definir um valor fixo se necessário */
+    padding: 20px !important; /* Aumenta o espaçamento interno */
+}  
 
 div {
     padding: 0;
