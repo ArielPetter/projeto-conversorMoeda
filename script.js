@@ -127,19 +127,19 @@ function changeCurrency(selectElement, isConverter = false) {
   switch (selectElement.value) {
     case "real":
       currencyName.innerHTML = "Real";
-      currencyImg.src = "../assets/real.png";
+      currencyImg.src = "./assets/real.png";
       break;
     case "dolar":
       currencyName.innerHTML = "Dólar";
-      currencyImg.src = "../assets/dolar.png";
+      currencyImg.src = "./assets/dolar.png";
       break;
     case "euro":
       currencyName.innerHTML = "Euro";
-      currencyImg.src = "../assets/euro.png";
+      currencyImg.src = "./assets/euro.png";
       break;
     case "libra":
       currencyName.innerHTML = "Libra";
-      currencyImg.src = "../assets/libra.png";
+      currencyImg.src = "./assets/libra.png";
       break;
     default:
       console.error("Moeda não reconhecida");
