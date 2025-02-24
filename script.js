@@ -165,34 +165,45 @@ function changeCurrency(selectElement, isConverter = false) {
   const currencyName = isConverter
     ? document.getElementById("nome-converter")
     : document.getElementById("nome-convertido");
+
   const currencyImg = isConverter
     ? document.querySelector(".bandeira-converter")
     : document.querySelector(".bandeira-convertida");
+
+  const formatCurrencyLabel = isConverter
+    ? document.querySelector(".valor-converter")
+    : document.querySelector(".valor-convertido");
 
   switch (selectElement.value) {
     case "real":
       currencyName.innerHTML = "Real";
       currencyImg.src = "./assets/real.png";
+      formatCurrencyLabel.innerHTML = "R$ 0,00";
       break;
     case "dolar":
       currencyName.innerHTML = "Dólar";
       currencyImg.src = "./assets/dolar.png";
+      formatCurrencyLabel.innerHTML = "US$ 0.00";
       break;
     case "euro":
       currencyName.innerHTML = "Euro";
       currencyImg.src = "./assets/euro.png";
+      formatCurrencyLabel.innerHTML = "€ 0.00";
       break;
     case "libra":
       currencyName.innerHTML = "Libra";
       currencyImg.src = "./assets/libra.png";
+      formatCurrencyLabel.innerHTML = "£ 0.00";
       break;
     case "btc":
       currencyName.innerHTML = "Bitcoin";
       currencyImg.src = "./assets/btc.png";
+      formatCurrencyLabel.innerHTML = "₿ 0.00";
       break;
     case "eth":
       currencyName.innerHTML = "Ethereum";
       currencyImg.src = "./assets/eth.png";
+      formatCurrencyLabel.innerHTML = "Ξ 0.00";
       break;
     default:
       console.error("Moeda não reconhecida");
